@@ -7,6 +7,43 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
+  
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <ion-img src="assets/img/Capitan.png"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/Spiderman.png"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/Toy_Story.png"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+  <ion-tabs>
+    
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/music']">
+        <ion-icon name="musical-note-outline"></ion-icon>
+        <ion-label>Música</ion-label>
+      </ion-tab-button>
+    
+
+      <ion-tab-button [routerLink]="['/movies']">
+        <ion-icon name="film-outline"></ion-icon>
+        <ion-label>Películas</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/games']">
+        <ion-icon name="game-controller-outline"></ion-icon>
+        <ion-label>Juegos</ion-label>
+      </ion-tab-button>
+
+
+    </ion-tab-bar>
+  </ion-tabs>
   
 </ion-content>
+
+
