@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
-  <title>Ionic App</title>
-
-  <base href="/" />
-
-  <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://img2.freepng.es/20180627/ff/kisspng-computer-icons-padlock-cadeado-5b34099e291226.4737626815301369901682.jpg"/>
 </head>
 
+
 <body>
-  <app-root></app-root>
+  <div class="container">
+    <div class="container_form">
+      <img src="https://i.pinimg.com/564x/a9/43/ae/a943ae59298c81f8422896ec3b20257c.jpg"alt="esto es una imagen">
+      <h2> Iniciar Sesion</h2>
+      <form action="">
+          <input type="text" placeholder="Usuario" ></input>
+          <input type="password" placeholder="password" ></input>
+          <input class="ckeck" type="checkbox" id="checkid" >
+            <label for="checkid">Recuerdame</label>
+
+          <a href="#">Olvidaste tu contraseña¡</a>
+          <input class="boton" type="submit" value="iniciar Sesion"></input>
+          </form>
+    </div>
+  </div>
 </body>
 
 </html>
